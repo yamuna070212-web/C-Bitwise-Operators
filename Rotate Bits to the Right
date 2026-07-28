@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned int num;
+    int n;
+
+    printf("Enter Number: ");
+    scanf("%u", &num);
+
+    printf("Rotate Right By: ");
+    scanf("%d", &n);
+
+    unsigned int result = (num >> n) | (num << (32 - n));
+
+    printf("Result = %u\n", result);
+
+    return 0;
+}
+Sample Output
+Enter Number: 10
+Rotate Right By: 2
+Result = 2147483650
