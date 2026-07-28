@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, setBits = 0, unsetBits;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    int temp = num;
+
+    while(temp)
+    {
+        setBits += temp & 1;
+        temp >>= 1;
+    }
+
+    unsetBits = 8 - setBits;
+
+    printf("Unset Bits = %d\n", unsetBits);
+
+    return 0;
+}
+Sample Output
+Enter Number: 13
+Unset Bits = 5
