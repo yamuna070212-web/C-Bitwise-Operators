@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned int num, rev;
+
+    printf("Enter Number: ");
+    scanf("%u", &num);
+
+    rev = ((num >> 24) & 0x000000FF) |
+          ((num >> 8)  & 0x0000FF00) |
+          ((num << 8)  & 0x00FF0000) |
+          ((num << 24) & 0xFF000000);
+
+    printf("Reversed Bytes = %u\n", rev);
+
+    return 0;
+}
+Sample Output
+Enter Number: 305419896
+Reversed Bytes = 2018915346
