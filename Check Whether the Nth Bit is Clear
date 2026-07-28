@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, n;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    printf("Enter Bit Position: ");
+    scanf("%d", &n);
+
+    if((num & (1 << n)) == 0)
+        printf("Bit %d is CLEAR\n", n);
+    else
+        printf("Bit %d is SET\n", n);
+
+    return 0;
+}
+Sample Output
+Enter Number: 10
+Enter Bit Position: 2
+Bit 2 is CLEAR
