@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Enter Two Numbers: ");
+    scanf("%d%d", &a, &b);
+
+    if((a ^ b) < 0)
+        printf("Opposite Signs\n");
+    else
+        printf("Same Signs\n");
+
+    return 0;
+}
+Sample Output
+Enter Two Numbers: -5 8
+Opposite Signs
