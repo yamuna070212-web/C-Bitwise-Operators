@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+
+    printf("Enter Two Numbers: ");
+    scanf("%d%d", &a, &b);
+
+    while(b != 0)
+    {
+        int carry = a & b;
+        a = a ^ b;
+        b = carry << 1;
+    }
+
+    printf("Sum = %d\n", a);
+
+    return 0;
+}
+Sample Output
+Enter Two Numbers: 15 20
+Sum = 35
