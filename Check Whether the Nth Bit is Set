@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, n;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    printf("Enter Bit Position (0-based): ");
+    scanf("%d", &n);
+
+    if(num & (1 << n))
+        printf("Bit %d is SET\n", n);
+    else
+        printf("Bit %d is NOT SET\n", n);
+
+    return 0;
+}
+Sample Output
+Enter Number: 10
+Enter Bit Position (0-based): 1
+Bit 1 is SET
