@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, position = 1;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    while((num & 1) == 0)
+    {
+        num >>= 1;
+        position++;
+    }
+
+    printf("First Set Bit Position = %d\n", position);
+
+    return 0;
+}
+Sample Output
+Enter Number: 12
+First Set Bit Position = 3
