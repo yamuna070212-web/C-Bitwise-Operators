@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned int num;
+    int pos = 0;
+
+    printf("Enter Number: ");
+    scanf("%u", &num);
+
+    while(num)
+    {
+        pos++;
+        num >>= 1;
+    }
+
+    printf("Highest Set Bit Position = %d\n", pos);
+    return 0;
+}
+Sample Output
+Enter Number: 18
+Highest Set Bit Position = 5
