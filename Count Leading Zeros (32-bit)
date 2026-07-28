@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    unsigned int num;
+    int count = 0, i;
+
+    printf("Enter Number: ");
+    scanf("%u", &num);
+
+    for(i = 31; i >= 0; i--)
+    {
+        if((num >> i) & 1)
+            break;
+        count++;
+    }
+
+    printf("Leading Zeros = %d\n", count);
+
+    return 0;
+}
+Sample Output
+Enter Number: 10
+Leading Zeros = 28
