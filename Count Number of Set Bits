@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, count = 0;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    while(num)
+    {
+        count += num & 1;
+        num >>= 1;
+    }
+
+    printf("Set Bits = %d\n", count);
+
+    return 0;
+}
+Sample Output
+Enter Number: 13
+Set Bits = 3
