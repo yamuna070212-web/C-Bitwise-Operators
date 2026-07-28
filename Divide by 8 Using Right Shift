@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    printf("Result = %d\n", num >> 3);
+
+    return 0;
+}
+Sample Output
+Enter Number: 64
+Result = 8
