@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int num;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    printf("Rightmost Set Bit = %d\n", num & (-num));
+
+    return 0;
+}
+Sample Output
+Enter Number: 12
+Rightmost Set Bit = 4
